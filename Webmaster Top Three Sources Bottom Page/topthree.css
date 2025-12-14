@@ -1,28 +1,37 @@
 /* Page setup */
 body {
-  margin: 0;
+  /* removes default browser margin */
+  margin: 0; 
   font-family: 'Inter', sans-serif;
   background-color: #6A0909;
 }
 
+/* applies to ALL elements */
 * {
     box-sizing: border-box;
+    /* makes width and height include padding and borders*/
+
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     
 }
 
-/*index*/
+/*============================*/
+/* INDEX NAVIGAGTION */
+/*============================*/
 .index a{
     text-decoration: none;
+    /* removes underline */
     color:#FBC52A;
+    /* Gold color for navigator links*/
 }
 
 .index__container{
     color:#FBC52A;
     height: 20px;
     justify-content: space-between;
+    /* Intended for flex alignment (works if display: flex is applied as well)*/
     width: 100%;
     max-width: 1000px;
     padding-left: 10vw;
@@ -32,14 +41,17 @@ body {
 
 .index{
     display: flex;
+    /*places navigator items in a row*/
     align-items: center;
+    /*Vertically aligns navigator items*/
     list-style: none;
     text-align: left;
     gap: 10px;
 }
 
-/*top three resource page*/
-/*headline (upper) page*/
+/*============================*/
+/* TOP THREE RESOURCES HEADING */
+/*============================*/
 .topThreeResources__scrollArrow{
     text-align: center;
     align-items: center;
@@ -47,27 +59,33 @@ body {
     padding-bottom: 3vw;
 }
 
+/* Paragraph under headline */
 .topThreeResources__details{
     padding-top: 2%;
     padding-left: 10vw;
 }
 
+/* main hero container */
 .topThreeResources{
     background: 
     linear-gradient(rgb(78, 11, 4, 0.35), rgb(78, 11, 4, 0.35))
-    ,url('images/top\ three\ resources\ background\ image.png');
+    ,url('images/top\ three\ resources\ background\ image.png'); /**** background image****/
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: center;
     color: #F6DFC0;
 }
 
+/* Headline Apperance */
 .topThreeResources__headline h1 {
     font-size: 80px;
     font-weight: 800;
     padding-left: 10vw;
 }
-/* Place Number + label +card*/
+
+/*============================*/
+/* RESOURCE BLOCK STRUCTURE */
+/*============================*/
 
 .resource-block {
   display: flex; 
@@ -75,49 +93,70 @@ body {
   align-items:flex-start;
 }
 
-/*Big #1*/
+/* Big ranking number (#1, #2, #3) */
 .resource-place-number {
-  font-size: 99.89px; 
+  font-size: 99.89px;
+  /* very large for emphasis*/ 
   font-weight: 800; 
   color: #F6DFc0; 
   line-height: 1;
+  /*removes extra vertical spacing*/
 }
 
+/* Category label (LEGAL, CULTURE, etc.) */
 .resource-label {
   font-size: 20px; 
   font-weight: 800; 
   letter-spacing: 2px; 
   color: rgba(246, 223, 192, 0.8);
+  /*slightly transparent*/
   margin-bottom: 73px; 
 }
 
-/* Center content */
+/* ========================= */
+/* PAGE LAYOUT */
+/* ========================= */
 .page-container {
   min-height: 100vh;
+  /* ensures page fills full screen height*/
+
   display: flex;
+
+  /*places resource squares side by side*/
+
   align-items: flex-start;
+
   justify-content: center;
+  /*cneters horizontally*/
+
   padding-top: 80px;
+  /* space below*/
+
   gap: 60px;
+  /*space between resource blocks*/
 }
 
-/* Resource card */
+/* ========================= */
+/* RESOURCE CARD */
+/* ========================= */
 .resource-card {
   width: 320px;
   background-color: #FFC15E;
   border-radius: 16px;
+  /*rounded corners*/
   padding: 20px;
   border: 1px solid #000;
   color: #6A0909;
 }
 
-/* Text styles */
+/* Resource Title */
 .resource-title {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 4px;
 }
 
+/*Sections inside card*/
 .resource-section {
   margin-bottom: 14px;
 }
@@ -134,9 +173,12 @@ body {
   margin: 0;
 }
 
-/* Link */
+/* ========================= */
+/* RESOURCE LINK */
+/* ========================= */
 .resource-link {
   display: inline-block;
+  /*allows margin and padding*/
   margin-top: 12px;
   font-weight: 800;
   text-decoration: none;
@@ -148,7 +190,9 @@ body {
 }
 
 
-/* Header wrapper */
+/* ========================= */
+/* HEADER */
+/* ========================= */
 .site-header {
   background-color: #4E0B04;
   height: 89.37px;
@@ -185,7 +229,9 @@ body {
   opacity: 0.8;
 }
 
-/* Footer */
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 .site-footer {
   background-color: #F6DEB3;
   padding: 40px 0;
