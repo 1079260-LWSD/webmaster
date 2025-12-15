@@ -68,7 +68,7 @@
     min-height: 80vh; /* Make hero section much taller */
     background: 
         linear-gradient(rgba(150, 0, 0, 0.5), rgba(150, 0, 0, 0.5)), /* red tint */
-        url('images/homeimage.jpg');
+        url('homeimage.jpg');
     background-repeat: no-repeat;   
     background-size: cover;         
     background-position: center;    
@@ -366,7 +366,7 @@ body {
   overflow: hidden;
   background: 
     linear-gradient(rgba(150, 0, 0, 0.35), rgba(150, 0, 0, 0.35)),
-    url('images/homeimage.jpg') center center/cover no-repeat;
+    url('homeimage.jpg') center center/cover no-repeat;
   display: flex;
   align-items: flex-start;
 }
